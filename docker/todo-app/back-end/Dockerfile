@@ -6,9 +6,9 @@ EXPOSE 3001
 
 COPY package*.json ./
 
-RUN npm install
-
 ADD node_modules.tar.gz ./
+
+RUN npm install
 
 COPY . ./
 
